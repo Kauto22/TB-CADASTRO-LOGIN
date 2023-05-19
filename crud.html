@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/678cc1cd35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="crud.css">
+    <title>Formulário</title>
+</head>
+
+<nav class="navbar navbar-expand-lg">
+    <p class="navbar-brand">Digital<span>planet.com</span></p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="home.html">Início <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crud.html">Formulário</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Kaboom!
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Criar</a>
+            <a class="dropdown-item" href="#">Ler</a>
+            <a class="dropdown-item" href="#">Atualizar</a>
+            <a class="dropdown-item" href="#">Deletar</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Algo mais aqui</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Desativado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Entrar</a>
+        </li>
+        <div class="icon">
+          <a href="https://github.com/Adeilsoara/" target="_blank" class="icon">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+<body>
+    <div class="background">
+    </div>
+    <div class="container">
+      <div class="container-text">
+        <h1 id="DP">Dados <span>Pessoais</span></h1>
+      </div>
+    <div class="form-container">
+      <form class="input-group">
+        <div class="input-box">
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-input-name" placeholder="Digite aqui" required>
+        </div>
+        <div class="input-box">
+          <label for="inputIdade">Idade</label>
+          <input type="number" class="form-input-idade" placeholder="Digite aqui" required>
+        </div>
+        <div class="input-box">
+          <label for="inputSerie">Série</label>
+          <select id="InputSerie" required>
+            <option selected>Escolher...</option>
+            <option>1º Ano</option>
+            <option>2º Ano</option>
+            <option>3º Ano</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="inputSerie">Curso</label>
+          <select id="InputSerie" required>
+            <option selected>Escolher...</option>
+            <option>Enfermagem</option>
+            <option>Informática</option>
+            <option>Comércio</option>
+            <option>Admnistração</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="inputNomePai">Nome do Pai</label>
+          <input type="text" class="form-input-parents" placeholder="Digite aqui" required>
+        </div>
+        <div class="input-box">
+          <label for="inputNomeMae">Nome da Mãe</label>
+          <input type="text" class="form-input-parents" placeholder="Digite aqui" required>
+        </div>
+        <div class="input-box">
+          <label for="inputCidade">Cidade</label>
+          <input type="text" class="form-input-city" placeholder="Digite aqui" required>
+        </div>
+        <div class="input-box">
+          <label for="inputEstado">Estado</label>
+          <select id="InputSerie" required>
+            <option selected>Escolher...</option>
+            <option>Acre (AC)</option>
+            <option>Alagoas (AL)</option>
+            <option>Amapá (AP)</option>
+            <option>Amazonas (AM)</option>
+            <option>Bahia (BA)</option>
+            <option>Ceará (CE)</option>
+            <option>Distrito Federal (DF)</option>
+            <option>Espirito Santo (ES)</option>
+            <option>Goiás (GO)</option>
+            <option>Maranhão (MA)</option>
+            <option>Mato Grosso (MT)</option>
+            <option>Mato Grosso do Sul (MS)</option>
+            <option>Minas Gerais (MG)</option>
+            <option>Pará (PA)</option>
+            <option>Paraíba (PB)</option>
+            <option>Pernambuco (PE)</option>
+            <option>Paraná (PR)</option>
+            <option>Rio de Janeiro (RJ)</option>
+            <option>Rio Grande do Norte (RN)</option>
+            <option>Rio Grande do Sul (RS)</option>
+            <option>Rondônia (RO)</option>
+            <option>Roraima (RR)</option>
+            <option>Santa Catarina (SC)</option>
+            <option>São Paulo (SP)</option>
+            <option>Sergipe (SE)</option>
+            <option>Tocantins (TO)</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="inputCidade">CEP</label>
+          <input type="text" class="form-input" placeholder="Digite aqui" required>
+        </div>
+      </form>
+        <!-- Botão para acionar modal -->
+        <button type="button" class="form-button" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        Salvar Dados</button>
+        <!-- Modal -->
+        <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Título do modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Tem certeza que os dados foram inseridos corretamente?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<!--       <form class="form-box">
+        <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inNome">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCity">Idade</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputSerie">Série</label>
+                  <select id="inputSerie" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>1º Ano</option>
+                    <option>2º Ano</option>
+                    <option>3º Ano</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputCurso">Curso</label>
+                  <select id="inputCurso" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>Enfermagem</option>
+                    <option>Informática</option>
+                    <option>Comércio</option>
+                    <option>Admnistração</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputNomePai">Nome do Pai</label>
+                  <input type="text" class="form-control" id="inputNomePai" >
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputNomeMae">Nome da Mãe</label>
+                  <input type="text" class="form-control" id="inputNomeMae" >
+                </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                  <label for="inputCity">Cidade</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputEstado">Estado</label>
+                  <select id="inputEstado" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>Acre (AC)</option>
+                    <option>Alagoas (AL)</option>
+                    <option>Amapá (AP)</option>
+                    <option>Amazonas (AM)</option>
+                    <option>Bahia (BA)</option>
+                    <option>Ceará (CE)</option>
+                    <option>Distrito Federal (DF)</option>
+                    <option>Espirito Santo (ES)</option>
+                    <option>Goiás (GO)</option>
+                    <option>Maranhão (MA)</option>
+                    <option>Mato Grosso (MT)</option>
+                    <option>Mato Grosso do Sul (MS)</option>
+                    <option>Minas Gerais (MG)</option>
+                    <option>Pará (PA)</option>
+                    <option>Paraíba (PB)</option>
+                    <option>Pernambuco (PE)</option>
+                    <option>Paraná (PR)</option>
+                    <option>Rio de Janeiro (RJ)</option>
+                    <option>Rio Grande do Norte (RN)</option>
+                    <option>Rio Grande do Sul (RS)</option>
+                    <option>Rondônia (RO)</option>
+                    <option>Roraima (RR)</option>
+                    <option>Santa Catarina (SC)</option>
+                    <option>São Paulo (SP)</option>
+                    <option>Sergipe (SE)</option>
+                    <option>Tocantins (TO)</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputCEP">CEP</label>
+                  <input type="text" class="form-control" id="inputCEP">
+              </div>
+            </div> -->
+<!-- Botão para acionar modal -->
+<!-- <div class="form-row m-4" >
+  <div class="form-group m-2"> -->
+    <!-- Botão para acionar modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+  Salvar Dados
+</button>
+ -->
+<!-- Modal -->
+<!-- <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Confirmação de Usuário</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+          </form> -->
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* STYLE da Barra de Navegação */
+.navbar{
+    background: rgb(10, 17, 107);
+    height: 50px;
+}
+.navbar-brand{
+    color: #ffff;
+    font-size: 2rem;
+    margin: 2px;
+}
+span{
+    color: red;
+}
+.nav-link{
+    color: #ffff;
+    position: relative;
+    left: 20px; 
+}
+#github{
+    left: 37rem;
+}
+.nav-link:hover{
+    color: red;
+}
+.icon{
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 2px;
+    color: #ffff;
+}
+.icon:hover{
+    color: red;
+}
+/* STYLE do conteúdo da página */
+a{
+    text-decoration: none;
+    color: black;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro-container{
+    position: relative;
+    background: white;
+    height: 480px;
+    width: 768px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #A0A0A0;
+}
+.cadastro-container.move .overlay-container{
+    transform: translateX(0%);
+}
+.form-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+.form {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+}
+.form-cadastro{
+    background-color: #ffff;
+}
+.form-login{
+    background-color: #fff;
+}
+.form-tittle{
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+    color: black;
+}
+.form-tittle-light{
+    color: #ffff;
+}
+.form-social{
+    display: flex;
+    gap: 24px;
+}
+.social-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 4px #0004;
+    background: #f3f3f3;
+}
+.social-icon:hover{
+    background: rgb(10, 17, 107);
+    transition: .3s;
+    transform: translateY(-15%);
+    color:#ffff;
+}
+.form-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-input{
+    height: 40px;
+    width: 300px;
+    padding: 10px 20px;
+    border-style: none;
+    background-color: #f3f3f3;
+}
+.form-button{
+    height: 40px;
+    width: 140px;
+    background-color: transparent;
+    border-radius: 50px;
+    border-style: none;
+    border: 2px rgb(10, 17, 107) solid;
+    cursor: pointer;
+    transition: .7s;
+}
+.form-button-light{
+    border: 2px #ffff solid;
+    color: #ffff;
+}
+.form-button-light:hover{
+    background-color: #ffff;
+    color: rgb(10, 17, 107);
+}
+.form-button:hover{
+    background-color: rgb(10, 17, 107);
+    color: #ffff;
+}
+.overlay-container{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(10, 17, 107);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: 2s;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(10, 17, 107);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #ffff;
+}
+.cadastro-container.move .overlay:nth-child(2){
+    opacity: 0;
+}

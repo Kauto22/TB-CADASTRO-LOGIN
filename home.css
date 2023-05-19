@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.navbar{
+    background: rgb(10, 17, 107);
+    height: 50px;
+}
+.navbar-brand{
+    color: #ffff;
+    font-size: 2rem;
+    margin: 2px;
+}
+span{
+    color: red;
+}
+.nav-link{
+    color: #ffff;
+    position: relative;
+    left: 20px;
+}
+#github{
+    left: 37rem;
+}
+.nav-link:hover{
+    color: red;
+}
+.icon{
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 2px;
+    color: #ffff;
+}
+.icon:hover{
+    color: red;
+}
+.container{
+    position: absolute;
+    top: 8rem;
+    margin-left: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron{
+    height: 600px;
+    width: 500px;
+}
+.jumbotron h1{ 
+    display: flex;
+    justify-content: center;
+    
+}
+.carousel-inner{
+    height: 110vh;
+    width: 20px;
+}

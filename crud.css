@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* STYLE da Barra de Navegação */
+.navbar{
+    background: rgb(10, 17, 107);
+    height: 50px;
+}
+.navbar-brand{
+    color: #ffff;
+    font-size: 2rem;
+    margin: 2px;
+}
+span{
+    color: red;
+}
+.nav-link{
+    color: #ffff;
+    position: relative;
+    left: 20px;
+    
+}
+#github{
+    left: 37rem;
+}
+.nav-link:hover{
+    color: red;
+}
+.icon{
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 2px;
+    color: #ffff;
+}
+.icon:hover{
+    color: red;
+}
+
+/* Fim do Nav Style */
+body{
+    background-image: url('https://media2.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif');
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    height: 100vh;
+    width: 70rem;
+    background: rgba(0, 0, 0, 0.637);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+.container-text{
+    width: 400px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    top: 6rem;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+#DP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+/* Tentativa de Formulário */
+
+.form-container{
+    margin-top: 5rem;
+    background: transparent;
+    height: 300px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box label{
+    display: flex;
+    margin-left: 1rem;
+}
+.input-box input{
+    margin: 0.6rem;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0.8rem;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box select{
+    margin: 0.6rem;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{
+    background-color: #eeeeee75;
+}
+.input-box input:focus-visible{
+    outline: 1px solid red;
+}
+/* Estilização Individual dos inputs */
+.form-input-name{
+    width: 28rem;
+}
+.form-input-idade{
+    width: 6rem;
+}
+.form-input-parents{
+    width: 26.2rem;
+}
+.form-input-city{
+    width: 23rem;
+}
+.modal-body{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fim da Tentativa de Formulário */
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    padding: 0.7rem;
+    box-shadow: 1px 1px 6px #0000001c;
+    background: rgba(0, 0, 0, 0.637);
+    color: #ffff;
+    border-radius: 10px;
+    border: solid white;
+}
+.form-button:hover{
+    transform: translateY(5px);
+    transition: 0.1s;
+    background: rgba(0, 0, 0, 0.637);
+    border: solid red;
+    color: red;
+}
+
+
+/* @media screen and (max-width 1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .container-text{
+        width: 90%;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+} */
